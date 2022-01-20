@@ -1,0 +1,124 @@
+@import url('../../main.css');
+@font-face {
+    font-family: myFont;
+    src: url("../../font/font-family.ttf");
+}
+
+
+body {
+    margin: 0;
+    font-family: myFont;
+    line-height: 1.7;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.mainLeft {
+    margin: 30px 10px 10px 20px;
+}
+div {
+    margin: 5px;
+}
+
+.largeText {
+    font-size: 36px;
+}
+
+.mediumText {
+    font-size: 26px;
+}
+
+.smallText {
+    font-size: 16px;
+}
+
+.mainRight {
+    margin: 30px 10px 10px 0px;
+    
+}
+
+options {
+    display: flex;
+    flex-direction: row;
+    display: block;
+    margin: 20px auto;
+}
+
+.option {
+    margin-top: 16px;
+}
+
+.questionControl {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: slateblue;
+    align-items: center;
+    border-radius: 6px;
+    padding: 20px 10px;
+    flex-direction: row;
+}
+.actionBtns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-between;
+    margin: 40px 10px 10px 10px;
+}
+
+.actionBtn {
+    height: 40px;
+    line-height: 28px;
+    text-align: center;
+    min-width: 156px;
+    font-size: 18px;
+    padding: 6px;
+    margin-right: 10px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: crimson;
+    color: white;
+}
+
+.finalSubmit {
+    height: 40px;
+    line-height: 28px;
+    text-align: center;
+    min-width: 156px;
+    font-size: 18px;
+    padding: 6px;
+    margin: 10px;
+    display: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+}
+#submitBtn {
+    color: green;
+    font-style: bold;
+    font-weight: 700;
+}
+#exitBtn {
+    color: red;
+    font-style: bold;
+    font-weight: 700;
+}
+
+.bg-success {
+    background-color: green !important;
+}
+
+.timer {
+    margin: 10px 10 15px 0px;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width:500px) {
+    .mainRight {
+        display: none;
+    }
+}

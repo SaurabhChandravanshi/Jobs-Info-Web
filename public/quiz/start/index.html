@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Console</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="navbar-container">
+        <div class="navbar-items">
+            <div class="navbar-items-left">
+                <a href="/">
+                    <div class="navbar-logo color-logo">Quiz Console</div>
+                </a>
+            </div>
+            <div class="navbar-items-right">
+                <div class="navbar-menu-item" id="exitBtn">Exit Quiz</div>
+                <div class="navbar-menu-item" id="submitBtn">Final Submit</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main">
+        <div class="mainLeft" id="questionContainer">
+            <div class="smallText" id="quesNumber"></div>
+            <div class="largeText" id="quesTitle"></div>
+            <div class="options smallText" id="optionsContainer">
+                <div class="option">
+                    <input type="radio" id="op1" name="option">
+                    <label for="op1" id="option1"></label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="op2" name="option">
+                    <label for="op1" id="option2"></label>
+                </div>
+
+                <div class="option">
+                    <input type="radio" id="op3" name="option">
+                    <label for="op1" id="option3"></label>
+                </div>
+
+                <div class="option">
+                    <input type="radio" id="op4" name="option">
+                    <label for="op1" id="option4"></label>
+                </div>
+            </div>
+
+            <div class="actionBtns" id="actionBtns">
+                <button class="actionBtn" id="prevBtn">Previous</button>
+                <button class="actionBtn bg-success" id="nextBtn">Save & Next</button>
+            </div>
+
+            <div class="finalSubmit" id="finalSubmit">
+                <button class="actionBtn" style="background-color: cornflowerblue;" id="finalSubmitBtn">Final Submit Test</button>
+            </div>
+        </div>
+
+        <div class="mainRight" id="mainRight">
+            <div class="timer" id="timer"></div>
+            <div class="questionControl" id="questionControl" style="visibility: hidden;">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js" type="module"></script>
+
+</html>

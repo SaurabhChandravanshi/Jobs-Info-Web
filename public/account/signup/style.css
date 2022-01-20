@@ -1,0 +1,113 @@
+@font-face {
+    font-family: myFont;
+    src: url(../../font/font-family.ttf);
+}
+body {
+    font-family: myFont;
+}
+
+
+.app {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    align-content: space-between;
+    width: 100%;
+}
+
+.appRight {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+    padding: auto 20px auto 20px;
+    margin-top: 60px;
+}
+
+.appLeft {
+    text-align: center;
+    margin-top: 200px;
+    align-items: center;
+}
+
+.largeText {
+    font-size: 40px;
+}
+.mediumText {
+    font-size: 26px;
+}
+
+input {
+    height: auto;
+    padding: 12px 12px;
+    width: 60%;
+    overflow: hidden;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    line-height: 1.888;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+input:focus {
+    outline: none !important;
+    border: 1px solid #039be5;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+.actionBtn {
+    height: auto;
+    padding: 6px 12px;
+    width: 60%;
+    overflow: hidden;
+    display: block;
+    background-color: crimson;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    line-height: 1.888;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.message-box {
+    background-color: lightskyblue;
+    color: white;
+    padding: 15px;
+    width: 50%;
+    font-size: 13px;
+    display: none;
+    letter-spacing: 1px;
+    border-radius: 4px;
+}
+
+@media screen and (max-width:768px) {
+    .app {
+        grid-template-columns: 100%;
+        align-items: center;
+        margin: 12px 6px;
+    }
+    .appLeft {
+        display: none;
+    }
+    input {
+        width: 95%;
+    }
+    .actionBtn {
+        width: 95%;
+    }
+    .message-box {
+        width: 90%;
+    }
+    .largeText {
+        font-size: 30px;
+    }
+    .mediumText {
+        font-size: 16px;
+    }
+}
+
+
+
+
